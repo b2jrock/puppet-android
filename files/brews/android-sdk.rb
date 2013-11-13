@@ -9,7 +9,7 @@ end
 class AndroidSdk < Formula
   homepage 'http://developer.android.com/index.html'
   url 'http://dl.google.com/android/android-sdk_r22.3-macosx.zip'
-  version 'r22.3-boxen2'
+  version 'r22.3-boxen1'
   sha1 '547ea51c4aa61d623a4823d0b635d3b66b6c9329'
 
   # TODO docs and platform-tools
