@@ -7,7 +7,7 @@ define android::build_tools(
   $ensure    = present,
   $version   = $name
 ) {
-  android::definition{ build-tools-${version}:
+  android::definition{ "build-tools-${version}":
     ensure    => $ensure,
     dest_path => "build-tools/${version}",
   }
