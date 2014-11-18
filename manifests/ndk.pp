@@ -4,7 +4,7 @@
 # Examples
 #
 #   include android::ndk
-class android::ndk {
+class android::ndk($ensure = $android::config::ndk_version) {
   include android::sdk
 
   homebrew::formula { 'android-ndk':
@@ -12,7 +12,7 @@ class android::ndk {
   }
 
   package { 'boxen/brews/android-ndk':
-    ensure  => $android::config::ndk_version,
+    ensure  => $ensure,
     require => Class['Android::Sdk'],
   }
 }
