@@ -4,7 +4,7 @@
 # Examples
 #
 #   include android::sdk
-class android::sdk {
+class android::sdk(ensure = $android::config::sdk_version) {
   include android
   include java
 
@@ -13,7 +13,7 @@ class android::sdk {
   }
 
   package { 'boxen/brews/android-sdk':
-    ensure  => $android::config::sdk_version,
+    ensure  => $ensure,
     require => Class['java'],
   }
 }
