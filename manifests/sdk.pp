@@ -4,7 +4,7 @@
 # Examples
 #
 #   include android::sdk
-class android::sdk(ensure = $android::config::sdk_version) {
+class android::sdk($ensure = $android::config::sdk_version) {
   include android
   include java
 
